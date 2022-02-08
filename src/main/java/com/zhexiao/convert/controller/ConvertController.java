@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @Auther: zhe.xiao
+ * @author: zhe.xiao
  * @Date: 2020/09/15
  * @Description
  */
