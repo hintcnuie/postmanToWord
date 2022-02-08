@@ -28,13 +28,13 @@ public class ConvertController {
      * @param file
      * @return
      */
-    @RequestMapping(value = "/upload", method = RequestMethod.POST)
+    @RequestMapping(value = "/parse", method = RequestMethod.POST)
     public Result<Postman> upload(MultipartFile file){
         return convertService.upload(file);
     }
 
     @RequestMapping(value = "/convert", method = RequestMethod.POST)
-    public Result writeWord(MultipartFile file, ConvertDTO convertDTO){
+    public Result<String> writeWord(MultipartFile file, ConvertDTO convertDTO){
         return convertService.writeWord(file, convertDTO);
     }
 }
