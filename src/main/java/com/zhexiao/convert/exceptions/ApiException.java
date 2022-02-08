@@ -11,7 +11,12 @@ package com.zhexiao.convert.exceptions;
  * @date 2020-06-25 22:45
  **/
 public class ApiException extends RuntimeException{
-    public ApiException(String message){
+    /**
+	 * serialVersionUID
+	 */
+	private static final long serialVersionUID = 1706435202663314861L;
+
+	public ApiException(String message){
         super(message);
     }
 
